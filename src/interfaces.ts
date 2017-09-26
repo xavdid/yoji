@@ -31,5 +31,5 @@ interface List {
   name: string
   id: string
   order?: number
-  user_id: string
+  userId: string
 }
