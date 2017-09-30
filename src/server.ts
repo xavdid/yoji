@@ -7,11 +7,11 @@ console.log(path.resolve('__dirname', '..'))
 
 app.use(express.static(path.resolve(__dirname, '..')))
 
-app.get('/', (req, res) => {
-  res.sendFile(path.resolve(__dirname, '..', '/index.html'))
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve(__dirname, '..', './index.html'))
 })
 
-app.get('/tasks', (req, res) => {
+app.get('/api/tasks', (req, res) => {
   const lists: List[] = [
     { id: '8', name: 'chores', userId: '1' },
     { id: '9', name: 'movies', userId: '1' }
