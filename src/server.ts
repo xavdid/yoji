@@ -1,9 +1,14 @@
 import express = require('express')
 import moment = require('moment')
+import path = require('path')
 const app = express()
 
+console.log(path.resolve('__dirname', '..'))
+
+app.use(express.static(path.resolve(__dirname, '..')))
+
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.sendFile(path.resolve(__dirname, '..', '/index.html'))
 })
 
 app.get('/tasks', (req, res) => {

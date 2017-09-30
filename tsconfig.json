@@ -4,9 +4,15 @@
     "module": "commonjs",
     "outDir": "./lib",
     "rootDir": "./src",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "jsx": "react",
     "strict": true,
     "noUnusedLocals": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true
-  }
+  },
+  "include": [
+    "./src/**/*"
+  ]
 }

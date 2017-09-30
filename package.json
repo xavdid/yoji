@@ -9,7 +9,8 @@
     "heroku-postbuild": "npm run build",
     "precommit": "lint-staged",
     "start": "node lib/server.js",
-    "test": "tslint -p tsconfig.json"
+    "test": "tslint -p tsconfig.json",
+    "webpack": "webpack --watch"
   },
   "keywords": [],
   "author": "David Brownman <beamneocube@gmail.com> (https://davidbrownman.com)",
@@ -22,7 +23,8 @@
     "express": "^4.15.4",
     "moment": "^2.18.1",
     "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "react-dom": "^16.0.0",
+    "typescript": "^2.5.3"
   },
   "devDependencies": {
     "awesome-typescript-loader": "^3.2.3",
@@ -32,8 +34,7 @@
     "prettier": "^1.7.0",
     "source-map-loader": "^0.2.2",
     "tslint": "^5.7.0",
-    "tslint-config-prettier": "^1.5.0",
-    "typescript": "^2.5.3"
+    "tslint-config-prettier": "^1.5.0"
   },
   "prettier": {
     "semi": false,
