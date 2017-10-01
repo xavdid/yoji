@@ -1,3 +1,5 @@
-export interface StoreState {
+interface StoreState {
   tasks: Task[]
 }
+
+export default StoreState

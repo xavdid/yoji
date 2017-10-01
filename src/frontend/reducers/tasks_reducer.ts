@@ -1,5 +1,5 @@
 import { TaskAction } from '../types/task_types'
-import { StoreState } from '../types/store_types'
+import StoreState from '../types/store_types'
 import {
   RECEIVE_TASKS,
   RECEIVE_TASK,
