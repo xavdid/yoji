@@ -1,6 +1,10 @@
 
 # Created by https://www.gitignore.io/api/node
 
+lib/
+dist/
+node_modules/
+
 ### Node ###
 # Logs
 logs
