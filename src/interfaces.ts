@@ -2,7 +2,7 @@
 // we'll see how it works on the front, but we'll either pull them out as full objects (potentially lots of repetition) or keep the foreign ids and have the frontend be responsible for lookups
 // right now the interface will accomodate either, but we'll specify later
 
-interface Task {
+export interface Task {
   title: string
   id: string
   createdDate: string // probably a datetime object? depends how it comes out of pg. also might get it for free from pg or from the id if it supports UUIDs
@@ -17,17 +17,17 @@ interface Task {
   recurranceCount?: number
 }
 
-interface User {
+export interface User {
   email: string
   id: string
   password: string // we should use an auth service because doing this ourself is no bueno
 }
 
-interface Tag {
+export interface Tag {
   name: string // no leading #
 }
 
-interface List {
+export interface List {
   name: string
   id: string
   order?: number

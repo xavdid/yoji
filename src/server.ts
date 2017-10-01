@@ -3,8 +3,6 @@ import moment = require('moment')
 import path = require('path')
 const app = express()
 
-console.log(path.resolve('__dirname', '..'))
-
 app.use(express.static(path.resolve(__dirname, '..')))
 
 app.get('*', (req, res) => {

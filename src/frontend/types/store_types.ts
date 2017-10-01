@@ -1,3 +1,5 @@
+import { Task } from '../../interfaces'
+
 export interface StoreState {
-  tasks: any[]
+  tasks: Task[]
 }
