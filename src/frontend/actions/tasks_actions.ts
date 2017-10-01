@@ -1,5 +1,4 @@
 import * as tasksConstants from '../constants/tasks_constants'
-import { Task } from '../../interfaces'
 
 export interface ReceiveTasks {
   type: tasksConstants.RECEIVE_TASKS
