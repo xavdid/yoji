@@ -31,7 +31,8 @@
     "react-redux": "^5.0.6",
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0",
-    "typescript": "^2.5.3"
+    "typescript": "^2.5.3",
+    "webpack": "^3.6.0"
   },
   "devDependencies": {
     "@types/jquery": "^3.2.12",
