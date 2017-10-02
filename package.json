@@ -9,7 +9,7 @@
     "heroku-postbuild": "npm run build",
     "precommit": "lint-staged",
     "start": "node lib/server.js",
-    "test": "tslint -p tsconfig.json",
+    "test": "tslint -p tsconfig.json --fix",
     "webpack": "webpack --watch"
   },
   "keywords": [],

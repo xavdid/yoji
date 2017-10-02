@@ -9,6 +9,6 @@ export const receiveTasks = (tasks: Task[]) => ({
 export const requestTasks = () => {
   TaskAPIUtil.fetchTasks().then(
     res => receiveTasks(res)
-    //what to do with an error goes here
+    // what to do with an error goes here
   )
 }
