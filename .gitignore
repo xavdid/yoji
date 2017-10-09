@@ -1,6 +1,9 @@
 
 # Created by https://www.gitignore.io/api/node
 
+lib/
+dist/
+
 ### Node ###
 # Logs
 logs
@@ -60,6 +63,6 @@ typings/
 
 # dotenv environment variables file
 .env
-**/*.js
+
 
 # End of https://www.gitignore.io/api/node
