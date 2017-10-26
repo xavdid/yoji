@@ -1,11 +1,16 @@
 {
   "compilerOptions": {
     "target": "es6",
+    "jsx": "react",
     "module": "commonjs",
     "outDir": "./lib",
     "rootDir": "./src",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "jsx": "react",
     "strict": true,
     "noUnusedLocals": true,
+    "noImplicitAny": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true
   }
