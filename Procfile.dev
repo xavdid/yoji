@@ -1,4 +1,4 @@
 # start processes
-server: node_modules/.bin/nodemon lib/server.js --delay 2 # delay so ts compilation can happen first
+server: node_modules/.bin/nodemon lib/app.js --delay 2 # delay so ts compilation can happen first
 typescript: node_modules/.bin/tsc -w
 webpack: webpack --watch

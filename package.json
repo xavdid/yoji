@@ -8,7 +8,7 @@
     "dev": "heroku local -f Procfile.dev -p 1337 || exit 0",
     "heroku-postbuild": "npm run build",
     "precommit": "lint-staged",
-    "start": "node lib/server.js",
+    "start": "node lib/app.js",
     "test": "tslint -p tsconfig.json --fix"
   },
   "keywords": [],
@@ -22,7 +22,6 @@
     "@types/react-dom": "^15.5.5",
     "@types/react-redux": "^5.0.9",
     "@types/redux-thunk": "^2.1.0",
-    "@types/sequelize": "^4.0.78",
     "awesome-typescript-loader": "^3.2.3",
     "express": "^4.15.4",
     "lodash": "^4.17.4",
@@ -34,7 +33,7 @@
     "react-redux": "^5.0.6",
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0",
-    "sequelize": "^4.17.2",
+    "typeorm": "^0.1.1",
     "typescript": "^2.5.3",
     "webpack": "^3.6.0"
   },
