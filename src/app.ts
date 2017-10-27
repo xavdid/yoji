@@ -1,13 +1,10 @@
+import 'reflect-metadata'
 import express = require('express')
 import moment = require('moment')
 import path = require('path')
 const app = express()
 
 app.use(express.static(path.resolve(__dirname, '..')))
-
-app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, '..', './index.html'))
-})
 
 app.get('/api/tasks', (req, res) => {
   const lists: List[] = [
